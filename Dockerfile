@@ -19,10 +19,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && \
     tensorflow-cpu \
     torch \ 
     torchvision \
-    torchaudio \
-    jax \
-    jaxlib \
-    optax
+    torchaudio 
 
 RUN python3 -m pip install --no-cache-dir \
     transformers \
