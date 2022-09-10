@@ -13,24 +13,15 @@ ENV TOKENIZERS_PARALLELISM=true
 
 USER root
 
-RUN python3 -m pip install --no-cache-dir --upgrade pip && \
-    python3 -m pip install --no-cache-dir \
-    jupyter \
-    tensorflow-cpu \
-    torch \ 
-    torchvision \
-    torchaudio 
+RUN python3 -m pip install --no-cache-dir --upgrade pip 
+
+RUN pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
 
 RUN python3 -m pip install --no-cache-dir \
     transformers \
-    datasets\
     nltk \
     pytorch_lightning \
-    gradio \
-    sentencepiece \
-    seqeval \
-    seaborn
-
+    gradio 
 
 USER ${NB_UID}
 
