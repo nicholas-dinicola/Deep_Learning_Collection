@@ -13,3 +13,10 @@ h5py
 ipykernel
 bokeh
 pickleshare
+umap-learn
+torch 
+torchvision 
+torchaudio
+pytorch_lightning
+transformers 
+datasets 
