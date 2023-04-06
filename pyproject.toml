@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "deep-learning-collection"
+version = "0.1.0"
+description = ""
+authors = ["nicholas di nicola"]
+readme = "README.md"
+packages = [{include = "deep_learning_collection"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.0.0"
+jupyter = "^1.0.0"
+torchvision = "^0.15.1"
+tensorboard = "^2.12.1"
+lightning = "^2.0.1"
+pytorch-lightning = "^2.0.1"
+matplotlib = "^3.7.1"
+seaborn = "^0.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
