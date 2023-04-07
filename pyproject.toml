@@ -2,7 +2,7 @@
 name = "deep-learning-collection"
 version = "0.1.0"
 description = ""
-authors = ["nicholas di nicola"]
+authors = ["nick"]
 readme = "README.md"
 packages = [{include = "deep_learning_collection"}]
 
@@ -16,6 +16,7 @@ lightning = "^2.0.1"
 pytorch-lightning = "^2.0.1"
 matplotlib = "^3.7.1"
 seaborn = "^0.12.2"
+transformers = "^4.27.4"
 
 
 [build-system]
